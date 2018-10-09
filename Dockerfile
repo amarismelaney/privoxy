@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-EXPOSE 8118
+EXPOSE 80
 
 RUN apk --update add privoxy
 
