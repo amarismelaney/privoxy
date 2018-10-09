@@ -2,7 +2,7 @@ confdir .
 logdir .
 actionsfile /etc/service/user.action
 filterfile /etc/service/user.filter
-listen-address  0.0.0.0:80
+listen-address  0.0.0.0:%PORT%
 accept-intercepted-requests 1
 toggle  1
 enable-remote-toggle  0
