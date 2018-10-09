@@ -4,6 +4,6 @@ RUN apk --update add privoxy
 
 COPY service /etc/service/
 WORKDIR /etc/service/
-RUN sed -i 's/%PORT%/$PORT/g'  config.tmp > config
+RUN sed -i "s/%PORT%/$PORT/g"  config
 
 CMD privoxy --no-daemon config
