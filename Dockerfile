@@ -7,4 +7,4 @@ RUN apk --update add privoxy
 COPY service /etc/service/
 WORKDIR /etc/service/
 
-ENTRYPOINT privoxy --no-daemon config
+CMD privoxy --no-daemon config
