@@ -6,4 +6,4 @@ COPY service /etc/service/
 WORKDIR /etc/service/
 RUN chmod +x run.sh
 
-CMD /etc/service/run.sh $PORT
+CMD /etc/service/run.sh 8118 #$PORT
